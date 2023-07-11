@@ -24,7 +24,9 @@ export const Standard = ({ style, className, ...assignableProps }: Props) => {
 
   useEffect(() => {
     ;(async () => {
+      console.log('LOAD TYPEBOT JS')
       await import('@typebot.io/js/dist/web')
+      console.log('OK')
     })()
   }, [])
 
